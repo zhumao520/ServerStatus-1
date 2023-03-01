@@ -52,7 +52,7 @@ Type=simple
 User=root
 Group=root
 WorkingDirectory=/opt/ServerStatus/
-ExecStart=/opt/ServerStatus/ServerStatus -port=80 -theme=badafans
+ExecStart=/opt/ServerStatus/ServerStatus -port=8888 -theme=badafans
 Restart=always
 [Install]
 WantedBy=multi-user.target
@@ -66,7 +66,7 @@ EOFSCRIPT
   
   # 新增代码，获取本机 IP 地址并显示
   ip=$(curl -s ifconfig.me)
-  echo -e "服务已启动，请访问 http://$ip:80 查看状态信息。"
+  echo -e "服务已启动，请访问 http://$ip:8888 查看状态信息。"
 
   echo -e "启动成功，显示日志 ${plain}"
   journalctl -n10 -u ServerStatus.service
