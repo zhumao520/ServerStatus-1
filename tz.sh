@@ -52,7 +52,7 @@ Type=simple
 User=root
 Group=root
 WorkingDirectory=/opt/ServerStatus/
-ExecStart=/opt/ServerStatus/ServerStatus -port=8888 -theme=badafans
+ExecStart=/opt/ServerStatus/ServerStatus -port=80 -theme=badafans
 Restart=always
 [Install]
 WantedBy=multi-user.target
