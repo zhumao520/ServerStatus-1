@@ -90,9 +90,9 @@ restart() {
 show_usage() {
   echo "使用方法: "
   echo "---------------------------------------"
-  echo "./install.sh i               - 安装"
-  echo "./install.sh u               - 卸载"
-  echo "./install.sh r               - 重启"
+  echo "./tz.sh i               - 安装"
+  echo "./tz.sh u               - 卸载"
+  echo "./tz.sh r               - 重启"
   echo "---------------------------------------"
 }
 pre_check
