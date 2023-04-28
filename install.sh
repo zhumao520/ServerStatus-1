@@ -68,6 +68,9 @@ EOFSCRIPT
 
   echo -e "启动成功，显示日志 ${plain}"
   journalctl -n10 -u ServerStatus.service
+ip=$(curl -s https://api.ipify.org)
+
+echo "http://$ip:8888"
 }
 
 uninstall() {
